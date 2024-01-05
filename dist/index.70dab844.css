@@ -1,0 +1,416 @@
+@font-face {
+  font-family: Beatrice Medium;
+  src: url("Beatrice-Medium.cb8d9c95.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Beatrice Regular;
+  src: url("Beatrice-Regular.52504d84.woff2") format("woff2");
+}
+
+body {
+  font-family: Beatrice Medium, serif;
+}
+
+:root {
+  --black: #000;
+  --black-87: #000000de;
+  --white: #fff;
+  --blue-pastel: #c2dcf2;
+  --charcoal: #3a464c;
+  --deep-blue: #152d43;
+  --cream: #f4f3f0;
+  --primary-deep-blue: #1a2d41;
+  --green: #68c0b0;
+  --green100: #bac106;
+  --green200: #5a8c24;
+  --light-grey: #d1d5d9;
+  --medium-grey: #e7e7e7;
+  --terracotta: #f28b5f;
+  --purple: #552681;
+  --primary-web-blue: #2661a6;
+  --headingOne: 32px;
+  --headingOneMobile: 22px;
+  --headingTwo: 18px;
+  --p: 15px;
+  --pMobile: 13px;
+  --smallP: 12px;
+  --a: 15px;
+}
+
+.carousel {
+  background: #fafafa;
+}
+
+.gallery-container {
+  width: 1116px;
+}
+
+.carousel-cell {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  column-gap: 24px;
+  width: 100%;
+  height: 368px;
+  display: grid;
+}
+
+.flickity-viewport {
+  overflow: hidden visible !important;
+}
+
+.offer {
+  max-width: 674px;
+}
+
+.offer .offerText h1 {
+  font-size: var(--headingOne);
+}
+
+@media (width <= 768px) {
+  .offer .offerText h1 {
+    font-size: var(--headingOneMobile);
+  }
+}
+
+.offer .offerText p {
+  font-size: var(--p);
+}
+
+@media (width <= 768px) {
+  .offer .offerText p {
+    font-size: var(--pMobile);
+  }
+}
+
+.offer .offerText a {
+  font-size: var(--a);
+}
+
+@media (width <= 694px) {
+  .offer .mixed-case-image img {
+    width: 321px;
+  }
+}
+
+.offer .imageGird {
+  grid-template-columns: 2fr 1fr;
+  column-gap: 117px;
+  display: grid;
+}
+
+.offer h2 {
+  justify-content: center;
+  display: flex;
+}
+
+.offer .heroCta button {
+  display: flex;
+}
+
+.heroCta {
+  justify-content: space-between;
+  max-width: 250px;
+  margin: auto;
+  padding-top: 24px;
+  display: flex;
+}
+
+.heroCta button {
+  border: 1px solid var(--primary-web-blue);
+  background: var(--white);
+  border-radius: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.964px;
+  min-width: 78px;
+  padding: 15px;
+  display: flex;
+}
+
+.heroCta button.is-active, .heroCta button:hover {
+  cursor: pointer;
+  background: var(--primary-web-blue);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.heroContainer {
+  justify-content: space-between;
+  max-width: 1109px;
+  margin: auto;
+  padding-top: 48px;
+  display: flex;
+}
+
+@media (width <= 1016px) {
+  .heroContainer {
+    display: block;
+  }
+}
+
+.basket {
+  border: 1px solid var(--cream);
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 356px;
+  padding: 24px;
+  box-shadow: 0 2px 2px #00000040;
+}
+
+.basket .youPay h2 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.basket p {
+  margin-left: 16px;
+}
+
+.basket .delivery {
+  max-width: 308px;
+  margin-top: 24px;
+}
+
+.basketItem {
+  padding-top: 8px;
+  display: flex;
+}
+
+.basketItem span {
+  background: var(--white);
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  display: flex;
+}
+
+.basketItem p {
+  font-size: var(--pMobile);
+}
+
+.total {
+  max-width: 308px;
+}
+
+.total .was {
+  justify-content: space-between;
+  align-items: flex-start;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  display: flex;
+}
+
+.total .now {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.total .voucher {
+  color: var(--terracotta);
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.total .youPay {
+  justify-content: space-between;
+  align-items: flex-start;
+  display: flex;
+}
+
+.total .addToBasket {
+  width: 100%;
+  height: 56px;
+}
+
+.total .breaker {
+  margin-bottom: 16px;
+}
+
+.total button {
+  border: 1px solid var(--primary-web-blue);
+  background: var(--white);
+  border-radius: 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.964px;
+  min-width: 320px;
+  padding: 15px;
+  display: flex;
+}
+
+.total button:hover {
+  cursor: pointer;
+  background: var(--primary-web-blue);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.ctaWine {
+  max-width: 1116px;
+  margin: 64px auto auto;
+}
+
+@media (width <= 768px) {
+  .offer .offerText h1 {
+    font-size: var(--headingOneMobile);
+  }
+}
+
+.ctaWine .tileOne p {
+  font-size: var(--smallP);
+}
+
+@media (width <= 768px) {
+  .offer .tileOne p {
+    font-size: var(--smallP);
+  }
+}
+
+.ctaWine .tileOne h2 {
+  font-size: var(--headingTwo);
+}
+
+.ctaWine .tileOne .magic h2 {
+  color: var(--purple);
+}
+
+.ctaWine .tileTwo .magic h2 {
+  color: var(--green100);
+}
+
+.ctaWine .tileThree .magic h2 {
+  color: var(--green200);
+}
+
+.ctaWine .tiles {
+  margin-top: 23px;
+}
+
+.ctaWine .tileOne {
+  border: 1px solid var(--cream);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 356px;
+  padding-top: 25px;
+  box-shadow: 0 2px 2px #00000040;
+}
+
+.ctaWine .tileOne .magic {
+  line-height: 14px;
+}
+
+.ctaWine .tileOne .single-bottle {
+  max-width: 64px;
+}
+
+.ctaWine .tileOne .tileRow .bottle {
+  grid-template-columns: 1fr 194px;
+  padding: 0 33px;
+  display: grid;
+}
+
+.ctaWine .tileOne .details {
+  display: block;
+}
+
+.ctaWine .tileOne span {
+  align-items: center;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.ctaWine .tileOne .tileOneReview {
+  border-top: 1px solid var(--medium-grey);
+  justify-content: space-between;
+  padding: 24px 34px;
+  display: flex;
+}
+
+.ctaWine .tileOne .tileOneReview img {
+  max-width: 107px;
+  display: flex;
+}
+
+.ctaWine .tileTwo {
+  border: 1px solid var(--cream);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 356px;
+  padding-top: 25px;
+  box-shadow: 0 2px 2px #00000040;
+}
+
+.ctaWine .tileTwo .magic {
+  line-height: 14px;
+}
+
+.ctaWine .tileTwo .single-bottle {
+  max-width: 64px;
+}
+
+.ctaWine .tileTwo .tileRow .bottle {
+  grid-template-columns: 1fr 194px;
+  padding: 0 33px;
+  display: grid;
+}
+
+.ctaWine .tileTwo .details {
+  display: block;
+}
+
+.ctaWine .tileTwo span {
+  align-items: center;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.ctaWine .tileTwo .tileOneReview {
+  border-top: 1px solid var(--medium-grey);
+  justify-content: space-between;
+  padding: 24px 34px;
+  display: flex;
+}
+
+.ctaWine .tileTwo .tileOneReview img {
+  max-width: 107px;
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*, :before, :after {
+  box-sizing: inherit;
+}
+
+a, a:hover {
+  cursor: pointer;
+  color: var(--primary-web-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=index.70dab844.css.map */

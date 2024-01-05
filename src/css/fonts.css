@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Beatrice Medium";
+  src: url("../fonts/Beatrice-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Beatrice Regular";
+  src: url("../fonts/Beatrice-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: "Beatrice Medium", serif;
+}

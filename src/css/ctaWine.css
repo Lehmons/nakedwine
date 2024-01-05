@@ -1,0 +1,137 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+
+.ctaWine {
+  max-width: 1116px;
+  margin: auto;
+  margin-top: 64px;
+}
+
+@media (max-width: 768px) {
+  .offer .offerText h1 {
+    font-size: var(--headingOneMobile);
+  }
+}
+
+.ctaWine .tileOne p {
+  font-size: var(--smallP);
+}
+
+@media (max-width: 768px) {
+  .offer .tileOne p {
+    font-size: var(--smallP);
+  }
+}
+
+.ctaWine .tileOne h2 {
+  font-size: var(--headingTwo);
+}
+
+.ctaWine .tileOne .magic h2 {
+  color: var(--purple);
+}
+
+.ctaWine .tileTwo .magic h2 {
+  color: var(--green100);
+}
+
+.ctaWine .tileThree .magic h2 {
+  color: var(--green200);
+}
+
+.ctaWine .tiles {
+  margin-top: 23px;
+}
+
+.ctaWine .tileOne {
+  padding-top: 25px;
+  max-width: 356px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--cream);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ctaWine .tileOne .magic {
+  line-height: 14px;
+}
+
+.ctaWine .tileOne .single-bottle {
+  max-width: 64px;
+}
+
+.ctaWine .tileOne .tileRow .bottle {
+  display: grid;
+  grid-template-columns: 1fr 194px;
+  padding: 0 33px;
+}
+
+.ctaWine .tileOne .details {
+  display: block;
+}
+
+.ctaWine .tileOne span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ctaWine .tileOne .tileOneReview {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--medium-grey);
+  padding: 24px 34px;
+}
+
+.ctaWine .tileOne .tileOneReview img {
+  display: flex;
+  max-width: 107px;
+}
+
+/* Tile Two */
+
+.ctaWine .tileTwo {
+  padding-top: 25px;
+  max-width: 356px;
+  width: 100%;
+  border-radius: 20px;
+  border: 1px solid var(--cream);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.ctaWine .tileTwo .magic {
+  line-height: 14px;
+}
+
+.ctaWine .tileTwo .single-bottle {
+  max-width: 64px;
+}
+
+.ctaWine .tileTwo .tileRow .bottle {
+  display: grid;
+  grid-template-columns: 1fr 194px;
+  padding: 0 33px;
+}
+
+.ctaWine .tileTwo .details {
+  display: block;
+}
+
+.ctaWine .tileTwo span {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ctaWine .tileTwo .tileOneReview {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--medium-grey);
+  padding: 24px 34px;
+}
+
+.ctaWine .tileTwo .tileOneReview img {
+  display: flex;
+  max-width: 107px;
+}

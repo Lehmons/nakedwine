@@ -1,0 +1,10 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+
+.testContainer {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+}

@@ -1,0 +1,22 @@
+{
+  "name": "nakedwine-web",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "@parcel/transformer-css": {
+    "cssModules": {
+      "dashedIdents": true
+    }
+  },
+  "devDependencies": {
+    "parcel": "latest"
+  },
+  "dependencies": {
+    "event-pubsub": "^5.0.3",
+    "flickity": "^3.0.0",
+    "gator": "^1.2.4"
+  }
+}

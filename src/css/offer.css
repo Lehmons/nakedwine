@@ -1,0 +1,49 @@
+@import "./vars.css";
+.offer {
+  max-width: 674px;
+}
+
+.offer .offerText h1 {
+  font-size: var(--headingOne);
+}
+
+@media (max-width: 768px) {
+  .offer .offerText h1 {
+    font-size: var(--headingOneMobile);
+  }
+}
+
+.offer .offerText p {
+  font-size: var(--p);
+}
+
+@media (max-width: 768px) {
+  .offer .offerText p {
+    font-size: var(--pMobile);
+  }
+}
+
+.offer .offerText a {
+  font-size: var(--a);
+}
+
+@media (max-width: 694px) {
+  .offer .mixed-case-image img {
+    width: 321px;
+  }
+}
+
+.offer .imageGird {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 117px;
+}
+
+.offer h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.offer .heroCta button {
+  display: flex;
+}

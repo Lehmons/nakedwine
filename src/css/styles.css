@@ -1,0 +1,50 @@
+@import "./vars.css";
+@import "./offer.css";
+@import "./heroCta.css";
+@import "./heroContainer.css";
+@import "./basket.css";
+@import "./basketItem.css";
+@import "./total.css";
+@import "./ctaWine.css";
+
+@import "./flickity.css";
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--primary-web-blue);
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* * {
+  background: var(--blue-pastel from global);
+  font-size: var(--headingOne from global);
+} */

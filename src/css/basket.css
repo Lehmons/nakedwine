@@ -1,0 +1,31 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+/* background: var(---- from global); */
+
+.basket {
+  width: 356px;
+  border: 1px solid var(--cream);
+  border-radius: 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 324px) {
+}
+
+.basket .youPay h2 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.basket p {
+  margin-left: 16px;
+}
+
+.basket .delivery {
+  margin-top: 24px;
+  max-width: 308px;
+}

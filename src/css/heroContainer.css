@@ -1,0 +1,14 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+
+.heroContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1109px;
+  padding-top: 48px;
+  margin: auto;
+  @media (max-width: 1016px) {
+    display: block;
+  }
+}

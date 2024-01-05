@@ -1,0 +1,24 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+
+.basketItem {
+  display: flex;
+  padding-top: 8px;
+}
+
+.basketItem span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  background: var(--white);
+}
+
+@media (max-width: 308px) {
+}
+
+.basketItem p {
+  font-size: var(--pMobile);
+}

@@ -1,0 +1,42 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+
+.heroCta {
+  display: flex;
+  justify-content: space-between;
+  max-width: 250px;
+  margin: auto;
+  padding-top: 24px;
+}
+
+.heroCta button {
+  display: flex;
+  padding: 15px;
+  min-width: 78px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.964px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-web-blue);
+  background: var(--white);
+}
+
+.heroCta button.is-active,
+.heroCta button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--primary-web-blue);
+  color: var(--white);
+}
+
+/* .heroCta h2 {
+  background: red;
+  font-size: var(--headingTwo);
+}
+
+@media (max-width: 335px) {
+  .heroCta h2 {
+    font-size: var(--headingTwoMobile);
+  }
+} */

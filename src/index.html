@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Naked Wines</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="heroContainer">
+        <div class="offer">
+          <div class="offerText">
+            <h1>
+              Congratulations! You have £75 to spend on wine, plus a bonus FREE
+              bottle
+            </h1>
+            <p>
+              Here's your exclusive offer... get 12 of our very best wines,
+              including award-winners and customer-favourites, for just £5.42 a
+              bottle. Plus a FREE bottle worth £12.99.
+            </p>
+            <a href="#meetthewines">Meet the wines</a>
+          </div>
+          <div class="imageGird">
+            <img
+              class="mixed-case-image"
+              src="./images/mixed.png"
+              alt="Wine case"
+            />
+            <img
+              class="single-bottle"
+              src="./images/singleMixed.png"
+              alt="This should change"
+            />
+          </div>
+          <h2>Choose your case with FREE delivery</h2>
+          <div class="heroCta">
+            <button data-src="mixed">Mixed</button>
+            <button data-src="red">Red</button>
+            <button data-src="white">White</button>
+          </div>
+        </div>
+        <section class="basket">
+          <h2>Get our best deal...</h2>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              Enjoy 12 top-rated wines - only £5.42 per bottle, plus FREE
+              delivery
+            </p>
+          </div>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              Plus your bonus free gift - a mouthwatering bottle of top-rated
+              Rioja worth £12.99
+            </p>
+          </div>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              Take the 30 day Naked Taste Test - to see if we're a match for
+              your taste buds
+            </p>
+          </div>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              After 30 days, become a fully-fledged Angel and unlock unbeatable
+              insider prices
+            </p>
+          </div>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              Angels save £25 into their account each month - to spend whenever
+              they like
+            </p>
+          </div>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              Gain access to much better wines - all backed by our 100%
+              hassle-free guarantee
+            </p>
+          </div>
+          <div class="basketItem">
+            <span>
+              <img class="tick" src="./images/tick.svg" alt="Tick" />
+            </span>
+            <p>
+              No tie-ins or membership fees - cancel at any time and get your
+              money back
+            </p>
+          </div>
+          <img class="delivery" src="./images/delivery.png" alt="Delivery" />
+          <div class="total">
+            <span class="was">
+              <p>Was:</p>
+              <p>£144.88</p>
+            </span>
+            <span class="now">
+              <p>Now:</p>
+              <p>£139.99</p>
+            </span>
+            <span class="voucher">
+              <p>Your voucher:</p>
+              <p>-£75.00</p>
+            </span>
+            <span class="youPay">
+              <h2>You pay:</h2>
+              <h2>£64.99</h2>
+            </span>
+            <img class="breaker" src="./images/breaker.png" alt="Breaker" />
+            <button><h2>Add to basket</h2></button>
+          </div>
+        </section>
+      </section>
+      <section class="ctaWine" id="meetthewines">
+        <div class="offerText">
+          <h1>We tasted 10,000 wines to build the perfect case for you</h1>
+          <p>
+            Our in-house experts are always in search of the world's best
+            independent winemakers. From hundreds of vineyards and thousands of
+            wines, only the top 5% make the Naked Wines cut.
+          </p>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery tiles">
+            <div class="carousel-cell">
+              <div class="tileOne">
+                <div class="tileRow">
+                  <div class="bottle">
+                    <div class="bottle-preview">
+                      <img
+                        class="single-bottle"
+                        src="./images/tileOne/arabella.png"
+                        alt="arabella"
+                      />
+                    </div>
+                    <div class="tileOneText">
+                      <div class="magic">
+                        <h2>Big Red</h2>
+                        <p
+                          >Stephen's fruity, full-bodied Shiraz has been
+                          delighting Angels for over 11 vintages</p
+                        >
+                      </div>
+                      <div class="details">
+                        <span className="grape">
+                          <img
+                            class="grape-icon"
+                            src="./images/tileOne/grapeicon.svg"
+                            alt="grape"
+                          />
+                          <p>Syrah | Shiraz</p>
+                        </span>
+                        <span className="region">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/southafrica.svg"
+                            alt="southafrica"
+                          />
+                          <p>Western Cape, South Africa</p>
+                        </span>
+                        <span className="winemaker">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/stephan.svg"
+                            alt="southafrica"
+                          />
+                          <p>By Stephen and Jamie de Wet</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tileOneReview">
+                  <img
+                    class="single-bottle"
+                    src="./images/hearts.png"
+                    alt="arabella"
+                  />
+                  <h2>£10.99</h2>
+                </div>
+              </div>
+              <div class="tileTwo">
+                <div class="tileRow">
+                  <div class="bottle">
+                    <div class="bottle-preview">
+                      <img
+                        class="single-bottle"
+                        src="./images/tileTwo/layofland.png"
+                        alt="arabella"
+                      />
+                    </div>
+                    <div class="tileTwoText">
+                      <div class="magic">
+                        <h2>Crisp White</h2>
+                        <p></p>
+                          Universally loved Marlborough Sauvignon from the
+                          genius who made Jackson Estate for 10 years
+                        </p>
+                      </div>
+                      <div class="details">
+                        <span className="grape">
+                          <img
+                            class="grape-icon"
+                            src="./images/tileOne/grapeicon.svg"
+                            alt="grape"
+                          />
+                          <p>Sauvignon blanc</p>
+                        </span>
+                        <span className="region">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/southafrica.svg"
+                            alt="southafrica"
+                          />
+                          <p>Marlborough, New Zealand</p>
+                        </span>
+                        <span className="winemaker">
+                          <img
+                            class="south-africa"
+                            src="./images/tileTwo/mike.svg"
+                            alt="Mike Paterson"
+                          />
+                          <p>By Mike Paterson</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tileOneReview">
+                  <img
+                    class="single-bottle"
+                    src="./images/hearts.png"
+                    alt="arabella"
+                  />
+                  <h2>£13.99</h2>
+                </div>
+              </div>
+              <div class="tileOne">
+                <div class="tileRow">
+                  <div class="bottle">
+                    <div class="bottle-preview">
+                      <img
+                        class="single-bottle"
+                        src="./images/tileThree/moerbei.png"
+                        alt="arabella"
+                      />
+                    </div>
+                    <div class="tileOneText">
+                      <div class="magic">
+                        <h2>Fruity White</h2>
+                        <p
+                          >This grown up, top class Sauvignon is perfect for a little midweek sophistication</p
+                        >
+                      </div>
+                      <div class="details">
+                        <span className="grape">
+                          <img
+                            class="grape-icon"
+                            src="./images/tileOne/grapeicon.svg"
+                            alt="grape"
+                          />
+                          <p>Sauvignon blanc</p>
+                        </span>
+                        <span className="region">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/southafrica.svg"
+                            alt="southafrica"
+                          />
+                          <p>Stellenbosch, South Africa</p>
+                        </span>
+                        <span className="winemaker">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/stephan.svg"
+                            alt="southafrica"
+                          />
+                          <p>By Kobie & Faisal</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tileOneReview">
+                  <img
+                    class="single-bottle"
+                    src="./images/hearts.png"
+                    alt="arabella"
+                  />
+                  <h2>£11.99</h2>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-cell">
+              <div class="tileOne">
+                <div class="tileRow">
+                  <div class="bottle">
+                    <div class="bottle-preview">
+                      <img
+                        class="single-bottle"
+                        src="./images/tileOne/arabella.png"
+                        alt="arabella"
+                      />
+                    </div>
+                    <div class="tileOneText">
+                      <div class="magic">
+                        <h2>Crisp White</h2>
+                        <p
+                          >Universally loved Marlborough Sauvignon from the
+                          genius who made Jackson Estate for 10 years</p
+                        >
+                      </div>
+                      <div class="details">
+                        <span className="grape">
+                          <img
+                            class="grape-icon"
+                            src="./images/tileOne/grapeicon.svg"
+                            alt="grape"
+                          />
+                          <p>Syrah | Shiraz</p>
+                        </span>
+                        <span className="region">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/southafrica.svg"
+                            alt="southafrica"
+                          />
+                          <p>Western Cape, South Africa</p>
+                        </span>
+                        <span className="winemaker">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/stephan.svg"
+                            alt="southafrica"
+                          />
+                          <p>By Stephen and Jamie de Wet</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tileOneReview">
+                  <img
+                    class="single-bottle"
+                    src="./images/hearts.png"
+                    alt="arabella"
+                  />
+                  <h2>£10.99</h2>
+                </div>
+              </div>
+              <div class="tileOne">
+                <div class="tileRow">
+                  <div class="bottle">
+                    <div class="bottle-preview">
+                      <img
+                        class="single-bottle"
+                        src="./images/tileOne/arabella.png"
+                        alt="arabella"
+                      />
+                    </div>
+                    <div class="tileOneText">
+                      <div class="magic">
+                        <h2>Crisp White</h2>
+                        <p
+                          >Universally loved Marlborough Sauvignon from the
+                          genius who made Jackson Estate for 10 years</p
+                        >
+                      </div>
+                      <div class="details">
+                        <span className="grape">
+                          <img
+                            class="grape-icon"
+                            src="./images/tileOne/grapeicon.svg"
+                            alt="grape"
+                          />
+                          <p>Syrah | Shiraz</p>
+                        </span>
+                        <span className="region">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/southafrica.svg"
+                            alt="southafrica"
+                          />
+                          <p>Western Cape, South Africa</p>
+                        </span>
+                        <span className="winemaker">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/stephan.svg"
+                            alt="southafrica"
+                          />
+                          <p>By Stephen and Jamie de Wet</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tileOneReview">
+                  <img
+                    class="single-bottle"
+                    src="./images/hearts.png"
+                    alt="arabella"
+                  />
+                  <h2>£10.99</h2>
+                </div>
+              </div>
+              <div class="tileOne">
+                <div class="tileRow">
+                  <div class="bottle">
+                    <div class="bottle-preview">
+                      <img
+                        class="single-bottle"
+                        src="./images/tileOne/arabella.png"
+                        alt="arabella"
+                      />
+                    </div>
+                    <div class="tileOneText">
+                      <div class="magic">
+                        <h2>Crisp White</h2>
+                        <p
+                          >Universally loved Marlborough Sauvignon from the
+                          genius who made Jackson Estate for 10 years</p
+                        >
+                      </div>
+                      <div class="details">
+                        <span className="grape">
+                          <img
+                            class="grape-icon"
+                            src="./images/tileOne/grapeicon.svg"
+                            alt="grape"
+                          />
+                          <p>Syrah | Shiraz</p>
+                        </span>
+                        <span className="region">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/southafrica.svg"
+                            alt="southafrica"
+                          />
+                          <p>Western Cape, South Africa</p>
+                        </span>
+                        <span className="winemaker">
+                          <img
+                            class="south-africa"
+                            src="./images/tileOne/stephan.svg"
+                            alt="southafrica"
+                          />
+                          <p>By Stephen and Jamie de Wet</p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tileOneReview">
+                  <img
+                    class="single-bottle"
+                    src="./images/hearts.png"
+                    alt="arabella"
+                  />
+                  <h2>£10.99</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

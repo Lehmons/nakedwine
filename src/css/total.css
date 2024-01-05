@@ -1,0 +1,71 @@
+@import "./vars.css";
+
+/* background: var(--blue-pastel from global); */
+/* background: var(---- from global); */
+
+.total {
+  max-width: 308px;
+}
+
+.total .was {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+.total .now {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.total .now {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.total .voucher {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  color: var(--terracotta);
+}
+
+.total .youPay {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.total .addToBasket {
+  height: 56px;
+  width: 100%;
+}
+
+.total .breaker {
+  margin-bottom: 16px;
+}
+
+.total button {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  min-width: 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.964px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-web-blue);
+  background: var(--white);
+}
+
+.total button:hover {
+  cursor: pointer;
+  text-decoration: none;
+  background: var(--primary-web-blue);
+  color: var(--white);
+}

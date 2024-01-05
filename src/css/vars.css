@@ -1,0 +1,25 @@
+:root {
+  --black: #000000;
+  --black-87: #000000de;
+  --white: #ffffff;
+  --blue-pastel: #c2dcf2;
+  --charcoal: #3a464c;
+  --deep-blue: #152d43;
+  --cream: #f4f3f0;
+  --primary-deep-blue: #1a2d41;
+  --green: #68c0b0;
+  --green100: #bac106;
+  --green200: #5a8c24;
+  --light-grey: #d1d5d9;
+  --medium-grey: #e7e7e7;
+  --terracotta: #f28b5f;
+  --purple: #552681;
+  --primary-web-blue: #2661a6;
+  --headingOne: 32px;
+  --headingOneMobile: 22px;
+  --headingTwo: 18px;
+  --p: 15px;
+  --pMobile: 13px;
+  --smallP: 12px;
+  --a: 15px;
+}
