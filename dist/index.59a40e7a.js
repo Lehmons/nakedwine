@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"gl6Mp":[function(require,module,exports) {
+})({"9EN09":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -226,7 +226,11 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== "undefined") {
     var hostname = getHostname();
     var port = getPort();
-    var protocol = HMR_SECURE || location.protocol == "https:" && !/localhost|127.0.0.1|0.0.0.0/.test(hostname) ? "wss" : "ws";
+    var protocol = HMR_SECURE || location.protocol == "https:" && ![
+        "localhost",
+        "127.0.0.1",
+        "0.0.0.0"
+    ].includes(hostname) ? "wss" : "ws";
     var ws;
     try {
         ws = new WebSocket(protocol + "://" + hostname + (port ? ":" + port : "") + "/");
@@ -628,6 +632,8 @@ const changeWine = (e)=>{
     nowP.textContent = heroWines?.[src]?.now;
     const voucherP = document.querySelector(".voucher > p:nth-child(2)");
     voucherP.textContent = heroWines?.[src]?.voucher;
+    const youPayh2 = document.querySelector(".youPay > h2:nth-child(2)");
+    youPayh2.textContent = heroWines?.[src]?.youPay;
 };
 (0, _gatorDefault.default)(document).on("click", ".heroCta button", changeWine);
 const Flickity = window.Flickity;
@@ -927,6 +933,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["gl6Mp","8lRBv"], "8lRBv", "parcelRequireb4b7")
+},{}]},["9EN09","8lRBv"], "8lRBv", "parcelRequireb4b7")
 
 //# sourceMappingURL=index.59a40e7a.js.map

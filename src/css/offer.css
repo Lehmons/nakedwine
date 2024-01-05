@@ -39,6 +39,12 @@
   column-gap: 117px;
 }
 
+.offer .imageGird .mixed-case-image {
+  width: 468px;
+  height: 310px;
+  object-fit: contain;
+}
+
 .offer h2 {
   display: flex;
   justify-content: center;

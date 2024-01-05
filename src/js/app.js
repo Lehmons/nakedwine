@@ -62,6 +62,9 @@ const changeWine = (e) => {
 
   const voucherP = document.querySelector(".voucher > p:nth-child(2)");
   voucherP.textContent = heroWines?.[src]?.voucher;
+
+  const youPayh2 = document.querySelector(".youPay > h2:nth-child(2)");
+  youPayh2.textContent = heroWines?.[src]?.youPay;
 };
 
 Gator(document).on("click", ".heroCta button", changeWine);

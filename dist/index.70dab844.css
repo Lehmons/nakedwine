@@ -38,27 +38,6 @@ body {
   --a: 15px;
 }
 
-.carousel {
-  background: #fafafa;
-}
-
-.gallery-container {
-  width: 1116px;
-}
-
-.carousel-cell {
-  grid-template-columns: repeat(3, 1fr);
-  align-items: start;
-  column-gap: 24px;
-  width: 100%;
-  height: 368px;
-  display: grid;
-}
-
-.flickity-viewport {
-  overflow: hidden visible !important;
-}
-
 .offer {
   max-width: 674px;
 }
@@ -97,6 +76,12 @@ body {
   grid-template-columns: 2fr 1fr;
   column-gap: 117px;
   display: grid;
+}
+
+.offer .imageGird .mixed-case-image {
+  object-fit: contain;
+  width: 468px;
+  height: 310px;
 }
 
 .offer h2 {
@@ -380,6 +365,27 @@ body {
 .ctaWine .tileTwo .tileOneReview img {
   max-width: 107px;
   display: flex;
+}
+
+.carousel {
+  background: #fafafa;
+}
+
+.gallery-container {
+  width: 1116px;
+}
+
+.carousel-cell {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: start;
+  column-gap: 24px;
+  width: 100%;
+  height: 368px;
+  display: grid;
+}
+
+.flickity-viewport {
+  overflow: hidden visible !important;
 }
 
 * {
