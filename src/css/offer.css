@@ -71,6 +71,12 @@
   column-gap: 117px;
 }
 
+@media (max-width: 768px) {
+  .offer .imageGird {
+    column-gap: 64px;
+  }
+}
+
 /* @media (max-width: 771px) {
   .offer .imageGird {
     transform: scale(50vw);
@@ -98,6 +104,7 @@
     top: 5%;
     left: 95%;
     transform: translate(-50%, -50%);
+    width: 50%;
   }
 }
 
@@ -137,6 +144,7 @@
     top: 36%;
     left: 34%;
     transform: translate(-50%, -50%);
+    width: 50%;
   }
 }
 

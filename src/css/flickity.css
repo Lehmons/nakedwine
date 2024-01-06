@@ -5,6 +5,12 @@
   padding-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .gallery-container {
+    padding-bottom: 0px;
+  }
+}
+
 .offerText,
 .gallery-container > .gallery {
   max-width: 1116px;
@@ -46,7 +52,7 @@
 .ctaWine .tile:after {
   position: absolute;
   top: 50px;
-  left: 0;
+  left: 5%;
   width: 100%;
   height: calc(340px + 10px);
   display: block;

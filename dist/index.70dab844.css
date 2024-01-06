@@ -103,8 +103,17 @@ body {
 .offer .imageGird {
   grid-template-columns: 2fr 1fr;
   column-gap: 117px;
-  margin-top: 64px;
   display: grid;
+}
+
+@media (width <= 768px) {
+  .offer .imageGird {
+    column-gap: 64px;
+  }
+}
+
+.offer .imageGird {
+  margin-top: 64px;
 }
 
 .mixed-case-image-wrap {
@@ -120,6 +129,7 @@ body {
 
 @media (width <= 768px) {
   .mixed-case-image-wrap .from-label {
+    width: 50%;
     position: absolute;
     top: 5%;
     left: 95%;
@@ -159,6 +169,7 @@ body {
 
 @media (width <= 768px) {
   .offer .imageGird .single-bottle-wrap .free {
+    width: 50%;
     position: absolute;
     top: 36%;
     left: 34%;
@@ -469,6 +480,12 @@ body {
   overflow-x: hidden;
 }
 
+@media (width <= 768px) {
+  .gallery-container {
+    padding-bottom: 0;
+  }
+}
+
 .offerText, .gallery-container > .gallery {
   max-width: 1116px;
   margin-left: auto;
@@ -515,7 +532,7 @@ body {
   display: block;
   position: absolute;
   top: 50px;
-  left: 0;
+  left: 5%;
   box-shadow: 0 2px 2px #00000040;
 }
 
