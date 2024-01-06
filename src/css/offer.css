@@ -92,6 +92,15 @@
   transform: translate(-50%, -50%);
 }
 
+@media (max-width: 768px) {
+  .mixed-case-image-wrap .from-label {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .offer .imageGird .mixed-case-image {
   width: 468px;
   height: 310px;
@@ -120,6 +129,15 @@
   top: calc(50% - 90px);
   left: calc(50% - 25px);
   transform: translate(-50% -50%);
+}
+
+@media (max-width: 768px) {
+  .offer .imageGird .single-bottle-wrap .free {
+    position: absolute;
+    top: 36%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .offer h2 {

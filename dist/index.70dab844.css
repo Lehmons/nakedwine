@@ -118,6 +118,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
+@media (width <= 768px) {
+  .mixed-case-image-wrap .from-label {
+    position: absolute;
+    top: 5%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .offer .imageGird .mixed-case-image {
   object-fit: contain;
   width: 468px;
@@ -146,6 +155,15 @@ body {
   position: absolute;
   top: calc(50% - 90px);
   left: calc(50% - 25px);
+}
+
+@media (width <= 768px) {
+  .offer .imageGird .single-bottle-wrap .free {
+    position: absolute;
+    top: 36%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .offer h2 {
