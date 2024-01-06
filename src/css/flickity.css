@@ -1,9 +1,30 @@
-.carousel {
-  background: #fafafa;
+.gallery-container {
+  position: relative;
+  overflow-x: hidden;
+  margin-top: 0;
+  padding-bottom: 60px;
 }
 
-.gallery-container {
-  width: 1116px;
+.offerText,
+.gallery-container > .gallery {
+  max-width: 1116px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1116px) {
+  .gallery-container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .gallery-container > .gallery {
+    width: 1116px;
+  }
+}
+
+.offerText p {
+  font-family: "Beatrice Regular", sans-serif;
 }
 
 .carousel-cell {
@@ -11,13 +32,55 @@
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
   width: 100%;
-  height: 368px;
+  height: calc(368px + 120px);
   column-gap: 24px;
 }
 
-.flickity-viewport {
-  overflow-x: hidden !important;
-  overflow-y: visible !important;
+@media (max-width: 768px) {
+  .carousel-cell {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+.ctaWine .tile:after {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(340px + 10px);
+  display: block;
+  content: "";
+  border-radius: 20px;
+  border: 1px solid var(--cream);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(391px + 120px);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.controls button {
+  pointer-events: auto;
+  background: transparent;
+  border: 0;
+}
+
+.controls button:hover {
+  cursor: pointer;
+}
+
+.controls button.left {
+  transform: scaleX(-1);
 }
 
 /* cell number */

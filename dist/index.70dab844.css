@@ -38,8 +38,23 @@ body {
   --a: 15px;
 }
 
-.offer {
-  max-width: 674px;
+@media (width <= 1440px) {
+  .offer {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+.offer .offerText {
+  row-gap: 17px;
+  display: grid;
+}
+
+@media (width <= 1440px) {
+  .offerText {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 
 .offer .offerText h1 {
@@ -49,6 +64,19 @@ body {
 @media (width <= 768px) {
   .offer .offerText h1 {
     font-size: var(--headingOneMobile);
+  }
+}
+
+.offer h2 {
+  font-size: var(--headingTwo);
+  margin-top: 40px;
+  font-family: Beatrice Regular, sans-serif;
+  font-weight: normal;
+}
+
+@media (width <= 768px) {
+  .offer .offerText h2 {
+    font-size: var(--headingTwoMobile);
   }
 }
 
@@ -75,13 +103,49 @@ body {
 .offer .imageGird {
   grid-template-columns: 2fr 1fr;
   column-gap: 117px;
+  margin-top: 64px;
   display: grid;
+}
+
+.mixed-case-image-wrap {
+  position: relative;
+}
+
+.mixed-case-image-wrap .from-label {
+  position: absolute;
+  top: calc(50% - 89px);
+  left: calc(50% + 174px);
+  transform: translate(-50%, -50%);
 }
 
 .offer .imageGird .mixed-case-image {
   object-fit: contain;
   width: 468px;
   height: 310px;
+}
+
+@media (width <= 1440px) {
+  .offer .imageGird .mixed-case-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.offer .imageGird .single-bottle-wrap {
+  position: relative;
+}
+
+@media (width <= 1440px) {
+  .offer .imageGird .single-bottle-wrap .single-bottle {
+    width: 29%;
+  }
+}
+
+.offer .imageGird .single-bottle-wrap .free {
+  transform: translate(-50% -50%);
+  position: absolute;
+  top: calc(50% - 90px);
+  left: calc(50% - 25px);
 }
 
 .offer h2 {
@@ -142,6 +206,14 @@ body {
   width: 356px;
   padding: 24px;
   box-shadow: 0 2px 2px #00000040;
+}
+
+@media (width <= 1440px) {
+  .basket {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .basket .youPay h2 {
@@ -236,13 +308,32 @@ body {
   text-decoration: none;
 }
 
+.ctaWine .body p {
+  font-size: var(--smallP);
+  font-family: Beatrice Regular, sans-serif;
+}
+
 .ctaWine {
-  max-width: 1116px;
+  max-width: 1312px;
   margin: 64px auto auto;
+  padding-top: 48px;
+}
+
+.ctaWine .body {
+  padding-top: 39px;
+}
+
+.ctaWine h1 {
+  font-size: var(--headingOne);
+}
+
+.offer .offerText {
+  row-gap: 20px;
+  display: grid;
 }
 
 @media (width <= 768px) {
-  .offer .offerText h1 {
+  .ctaWine .offerText h1, .offer .offerText h1 {
     font-size: var(--headingOneMobile);
   }
 }
@@ -257,122 +348,128 @@ body {
   }
 }
 
-.ctaWine .tileOne h2 {
-  font-size: var(--headingTwo);
-}
-
-.ctaWine .tileOne .magic h2 {
+.ctaWine .tileOne .body h2 {
   color: var(--purple);
+  padding-top: 5px;
 }
 
-.ctaWine .tileTwo .magic h2 {
+.ctaWine .tileTwo .body h2 {
   color: var(--green100);
 }
 
-.ctaWine .tileThree .magic h2 {
+.ctaWine .tileThree .body h2 {
   color: var(--green200);
+}
+
+.ctaWine .tileSix .body h2 {
+  color: var(--purple);
 }
 
 .ctaWine .tiles {
   margin-top: 23px;
 }
 
-.ctaWine .tileOne {
-  border: 1px solid var(--cream);
-  border-radius: 20px;
+.ctaWine .details span {
+  gap: 8px;
+  display: flex;
+}
+
+.ctaWine .tile {
   width: 100%;
   max-width: 356px;
   padding-top: 25px;
-  box-shadow: 0 2px 2px #00000040;
+  position: relative;
+  overflow: visible;
 }
 
-.ctaWine .tileOne .magic {
+.ctaWine, .ctaWine .tileOneReview {
+  margin-top: 9px;
+}
+
+.ctaWine .tileThreeReview {
+  margin-top: 26px;
+}
+
+.ctaWine .tileFourReview {
+  margin-top: 36px;
+}
+
+.ctaWine .tileFiveReview {
+  margin-top: 40px;
+}
+
+.ctaWine .tileSixReview {
+  margin-top: 18px;
+}
+
+.ctaWine .tile .magic {
   line-height: 14px;
 }
 
-.ctaWine .tileOne .single-bottle {
-  max-width: 64px;
+.ctaWine .single-bottle {
+  z-index: 2;
+  max-width: 94px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.ctaWine .tileOne .tileRow .bottle {
+.ctaWine .tile .tileRow .bottle {
   grid-template-columns: 1fr 194px;
   padding: 0 33px;
   display: grid;
 }
 
-.ctaWine .tileOne .details {
+.ctaWine .tile .details {
+  padding-top: 10px;
   display: block;
 }
 
-.ctaWine .tileOne span {
+.ctaWine .tile span {
   align-items: center;
   margin-bottom: 16px;
   display: flex;
 }
 
-.ctaWine .tileOne .tileOneReview {
+.ctaWine .tile .tileOneReview, .tileThreeReview, .tileFourReview, .tileFiveReview, .tileSixReview {
   border-top: 1px solid var(--medium-grey);
   justify-content: space-between;
-  padding: 24px 34px;
+  padding: 28px 34px 0;
   display: flex;
 }
 
-.ctaWine .tileOne .tileOneReview img {
+.ctaWine .tile .tileOneReview img, .ctaWine .tile .tileThreeReview img, .ctaWine .tile .tileFourReview img, .ctaWine .tile .tileFiveReview img, .ctaWine .tile .tileSixReview img {
   max-width: 107px;
   display: flex;
-}
-
-.ctaWine .tileTwo {
-  border: 1px solid var(--cream);
-  border-radius: 20px;
-  width: 100%;
-  max-width: 356px;
-  padding-top: 25px;
-  box-shadow: 0 2px 2px #00000040;
-}
-
-.ctaWine .tileTwo .magic {
-  line-height: 14px;
-}
-
-.ctaWine .tileTwo .single-bottle {
-  max-width: 64px;
-}
-
-.ctaWine .tileTwo .tileRow .bottle {
-  grid-template-columns: 1fr 194px;
-  padding: 0 33px;
-  display: grid;
-}
-
-.ctaWine .tileTwo .details {
-  display: block;
-}
-
-.ctaWine .tileTwo span {
-  align-items: center;
-  margin-bottom: 16px;
-  display: flex;
-}
-
-.ctaWine .tileTwo .tileOneReview {
-  border-top: 1px solid var(--medium-grey);
-  justify-content: space-between;
-  padding: 24px 34px;
-  display: flex;
-}
-
-.ctaWine .tileTwo .tileOneReview img {
-  max-width: 107px;
-  display: flex;
-}
-
-.carousel {
-  background: #fafafa;
 }
 
 .gallery-container {
-  width: 1116px;
+  margin-top: 0;
+  padding-bottom: 60px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.offerText, .gallery-container > .gallery {
+  max-width: 1116px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (width <= 1116px) {
+  .gallery-container {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .gallery-container > .gallery {
+    width: 1116px;
+  }
+}
+
+.offerText p {
+  font-family: Beatrice Regular, sans-serif;
 }
 
 .carousel-cell {
@@ -380,12 +477,54 @@ body {
   align-items: start;
   column-gap: 24px;
   width: 100%;
-  height: 368px;
+  height: 488px;
   display: grid;
 }
 
-.flickity-viewport {
-  overflow: hidden visible !important;
+@media (width <= 768px) {
+  .carousel-cell {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+
+.ctaWine .tile:after {
+  content: "";
+  border: 1px solid var(--cream);
+  border-radius: 20px;
+  width: 100%;
+  height: 350px;
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  box-shadow: 0 2px 2px #00000040;
+}
+
+.controls {
+  pointer-events: none;
+  z-index: 2;
+  justify-content: space-between;
+  width: 100%;
+  height: 511px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.controls button {
+  pointer-events: auto;
+  background: none;
+  border: 0;
+}
+
+.controls button:hover {
+  cursor: pointer;
+}
+
+.controls button.left {
+  transform: scaleX(-1);
 }
 
 * {
@@ -399,7 +538,6 @@ html {
 }
 
 body {
-  max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
 }

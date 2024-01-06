@@ -77,4 +77,21 @@ var flky = new Flickity(".gallery", {
   cellSelector: ".carousel-cell",
   wrapAround: true,
   percentPosition: true,
+  pageDots: false,
+  prevNextButtons: false,
 });
+
+const goPrevious = (e) => {
+  e?.preventDefault();
+  flky.previous();
+};
+
+const goNext = (e) => {
+  e?.preventDefault();
+  console.log(flky);
+  flky.next();
+};
+
+Gator(document).on("click", ".controls .left", goPrevious);
+
+Gator(document).on("click", ".controls .right", goNext);

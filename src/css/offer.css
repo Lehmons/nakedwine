@@ -1,6 +1,25 @@
 @import "./vars.css";
-.offer {
+/* .offer {
   max-width: 674px;
+} */
+
+@media (max-width: 1440px) {
+  .offer {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+.offer .offerText {
+  display: grid;
+  row-gap: 17px;
+}
+
+@media (max-width: 1440px) {
+  .offerText {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
 }
 
 .offer .offerText h1 {
@@ -10,6 +29,19 @@
 @media (max-width: 768px) {
   .offer .offerText h1 {
     font-size: var(--headingOneMobile);
+  }
+}
+
+.offer h2 {
+  font-size: var(--headingTwo);
+  font-family: "Beatrice Regular", sans-serif;
+  font-weight: normal;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .offer .offerText h2 {
+    font-size: var(--headingTwoMobile);
   }
 }
 
@@ -39,10 +71,55 @@
   column-gap: 117px;
 }
 
+/* @media (max-width: 771px) {
+  .offer .imageGird {
+    transform: scale(50vw);
+  }
+} */
+
+.offer .imageGird {
+  margin-top: 64px;
+}
+
+.mixed-case-image-wrap {
+  position: relative;
+}
+
+.mixed-case-image-wrap .from-label {
+  position: absolute;
+  top: calc(50% - 89px);
+  left: calc(50% + 174px);
+  transform: translate(-50%, -50%);
+}
+
 .offer .imageGird .mixed-case-image {
   width: 468px;
   height: 310px;
   object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .offer .imageGird .mixed-case-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.offer .imageGird .single-bottle-wrap {
+  position: relative;
+}
+
+@media (max-width: 1440px) {
+  .offer .imageGird .single-bottle-wrap .single-bottle {
+    width: 29%;
+  }
+}
+
+.offer .imageGird .single-bottle-wrap .free {
+  position: absolute;
+  top: calc(50% - 90px);
+  left: calc(50% - 25px);
+  transform: translate(-50% -50%);
 }
 
 .offer h2 {

@@ -642,8 +642,21 @@ var flky = new Flickity(".gallery", {
     cellAlign: "center",
     cellSelector: ".carousel-cell",
     wrapAround: true,
-    percentPosition: true
+    percentPosition: true,
+    pageDots: false,
+    prevNextButtons: false
 });
+const goPrevious = (e)=>{
+    e?.preventDefault();
+    flky.previous();
+};
+const goNext = (e)=>{
+    e?.preventDefault();
+    console.log(flky);
+    flky.next();
+};
+(0, _gatorDefault.default)(document).on("click", ".controls .left", goPrevious);
+(0, _gatorDefault.default)(document).on("click", ".controls .right", goNext);
 
 },{"../css/styles.css":"1CY4s","gator":"8MLM8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"1CY4s":[function() {},{}],"8MLM8":[function(require,module,exports) {
 /**
