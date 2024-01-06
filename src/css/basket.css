@@ -21,6 +21,12 @@
   }
 }
 
+/* @media (max-width: 768px) {
+  .basket {
+    width: 356px;
+  }
+} */
+
 .basket .youPay h2 {
   margin-top: 24px;
   margin-bottom: 16px;
